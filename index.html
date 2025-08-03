@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A sample semantic, accessible, and SEO-friendly HTML5 web page." />
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development" />
+  <meta name="author" content="Your Name" />
+  <title>Semantic and Accessible Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, section, article, footer {
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Welcome to Our Semantic Website</h1>
+    <p>Built with HTML5, Accessibility, and SEO in mind.</p>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This web page demonstrates the use of <strong>semantic HTML5</strong> elements, accessibility best practices, and <strong>SEO-friendly</strong> structure and metadata.</p>
+      <img src="images/html5-logo.png" alt="HTML5 Logo" width="150" />
+    </section>
+
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Latest Articles</h2>
+
+      <article role="article" aria-labelledby="article1-title">
+        <h3 id="article1-title">Why Semantic HTML Matters</h3>
+        <p>Semantic elements improve accessibility, readability, and search engine optimization. Using tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;article&gt;</code> makes your content more meaningful to both users and machines.</p>
+      </article>
+
+      <article role="article" aria-labelledby="article2-title">
+        <h3 id="article2-title">Boost SEO with Structured Content</h3>
+        <p>Search engines prefer structured and keyword-rich content. Ensure your headings are hierarchical and contain relevant keywords like "SEO", "web development", and "accessibility".</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" aria-required="true" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" aria-required="true" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
